@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/light2" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="BACK"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/dunggeunmo"
+        android:textColor="#f3f3f3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="V"
+        android:textStyle="bold"
+        android:id="@+id/wheelPoint"
+        android:gravity="center" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/wheelPoint"
+        android:id="@+id/wheel"/>
+
+    <Button
+        android:id="@+id/rotate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/dunggeunmo"
+        android:text="START"
+        android:textColor="#f3f3f3"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/state1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" " />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"/>
+
+</RelativeLayout>

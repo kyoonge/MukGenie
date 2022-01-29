@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/f1" />
+
+    <TextView
+        android:id="@+id/scode_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="" />
+
+    <RelativeLayout
+        android:id="@+id/relative_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_below="@+id/scode_profile"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="12sp"
+                android:textColor="#777777"
+                android:fontFamily="@font/dunggeunmo"/>
+
+            <TextView
+                android:id="@+id/name_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chris Morris"
+                android:textSize="26sp"
+                android:textColor="#f3f3f3"
+                android:fontFamily="@font/dunggeunmo"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_name"
+        android:paddingVertical="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/info_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:text="+91-999999999"
+                android:textColor="#f3f3f3"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/relative_info"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#777777"/>
+
+
+
+    <View
+        android:layout_below="@+id/relative_name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#404040"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_house_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_below="@id/relative_info"
+        android:paddingVertical="10dp">
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f3f3f3"
+            android:fontFamily="@font/dunggeunmo"
+            android:layout_marginTop="20dp"
+            android:text="먹으러 가기"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

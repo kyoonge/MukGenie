@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RegisterLoginExample</string>
+    <string name="type"></string>
+    <string name="type_prompt">라운드 선택</string>
+    <string-array name="type_array">
+        <item>8강</item>
+        <item>16강</item>
+        <item>32강</item>
+        <item>64강</item>
+    </string-array>
+</resources>
